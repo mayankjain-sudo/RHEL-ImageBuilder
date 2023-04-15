@@ -91,3 +91,13 @@ Procedure:
         |  RHEL for Edge Raw                  | edge-raw-image             |  .tar         |
         |  RHEL for Edge Simplified Installer | edge-simplified-installer  |  .iso         |
         |  ISO image                          | image-installer            |  .iso         |
+        
+        Now run the below command to create iso image using our Blueprint
+            # composer-cli compose start FIRSTIMAGE image-installer
+            output of above command: 
+            Compose c1e507cb-ffdf-4564-842a-89e3c2ade65d added to the queue 
+            where c1e507cb-ffdf-4564-842a-89e3c2ade65d is the unique UUID of the image creation
+        After running the command Compose added in the queue you can check the status by running below command.
+            # composer-cli compose status
+        Note : Compose process takes upto 10mins to create the Image.
+        
