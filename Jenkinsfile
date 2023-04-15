@@ -14,7 +14,7 @@ pipeline {
         }
         stage('createImage'){
             steps {
-                
+                sh "echo 'create Image step come later'"
             }
         }
     }
