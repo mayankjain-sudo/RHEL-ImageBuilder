@@ -8,4 +8,8 @@ The VM for image builder must be running and subscribed to Red Hat Subscription 
 
 # Procedure
 
-##Install the image builder and other necessary packages 
+Install the image builder and other necessary packages by running below commands:
+  ## osbuild-composer - supported from RHEL 8.3 onward
+  ## composer-cli
+  ## cockpit-composer
+  ## bash-completion
