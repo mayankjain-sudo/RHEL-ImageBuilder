@@ -77,9 +77,9 @@ Procedure:
         # composer-cli compose types
         Currently this are the valid types availables :
         -----------------------------------------------------------------------------------
-        | Description	                      |  CLI name	               file extension |
+        | Description	                      |  CLI name	               | file extension
         -----------------------------------------------------------------------------------
-        | QEMU QCOW2 Image	             	  | qcow2	                   |  .qcow2 	  |
+        | QEMU QCOW2 Image                    | qcow2	                   |  .qcow2 	  |
         | TAR Archive	                 	  | tar						   |  .tar   	  |
         | Amazon Machine Image Disk	     	  | ami						   |  .raw   	  |
         | Azure Disk Image	             	  | vhd						   |  .vhd   	  |
