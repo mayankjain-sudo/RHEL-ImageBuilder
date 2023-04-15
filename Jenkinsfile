@@ -7,9 +7,14 @@ pipeline {
                 checkout scm
             }
         }
-        stage('Test'){
+        stage('setup'){
             steps {
-                sh "ls"
+                sh "sh requirement.sh"
+            }
+        }
+        stage('createImage'){
+            steps {
+                
             }
         }
     }
