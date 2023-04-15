@@ -76,21 +76,7 @@ Procedure:
     Composing images from blueprints
         # composer-cli compose types
         Currently this are the valid types availables :
-        -----------------------------------------------------------------------------------
-        | Description	                      |  CLI name	               | file extension
-        -----------------------------------------------------------------------------------
-        | QEMU QCOW2 Image                    | qcow2	                   |  .qcow2 	  |
-        | TAR Archive	                 	  | tar						   |  .tar   	  |
-        | Amazon Machine Image Disk	     	  | ami						   |  .raw   	  |
-        | Azure Disk Image	             	  | vhd						   |  .vhd   	  |
-        | Google Cloud Platform	         	  | gce						   |  .vhd   	  |
-        | VMware Virtual Machine Disk	 	  | vmdk					   |  .vmdk  	  |
-        | Openstack	                     	  | openstack				   |  .qcow2 	  |
-        | RHEL for Edge Commit	         	  | edge-commit				   |  .tar   	  |
-        | RHEL for Edge Container	     	  | edge-container	           |  .tar   	  |
-        | RHEL for Edge Installer	     	  | edge-installer	           |  .iso   	  |
-        | RHEL for Edge Raw	             	  | edge-raw-image	           |  .tar   	  |
-        | RHEL for Edge Simplified Installer  | edge-simplified-installer  |  .iso   	  |
-        | ISO image	                          | image-installer			   |  .iso   	  |
-        -----------------------------------------------------------------------------------
-        
+        | Description                         | CLI name                   | file extension   
+        | ------------------------------------| ---------------------------| --------------|
+        | `QEMU QCOW2 Image`                  | qcow2                      | `.qcow2`      |
+        | `TAR Archive`                       | tar                        | `.tar`        |
