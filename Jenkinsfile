@@ -1,10 +1,15 @@
 pipeline {
     agent any
     stages {
-        stage('Build') {
+        stage('build') {
             steps {
-                // Get some code from a GitHub repository
-               echo "Hello Jenkins"
+                echo "Code checkout"
+                checkout scm
+            }
+        }
+        stage('Test'){
+            steps {
+                sh "ls"
             }
         }
     }
