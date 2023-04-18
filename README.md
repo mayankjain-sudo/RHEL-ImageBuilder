@@ -101,5 +101,5 @@ Procedure:
             # composer-cli compose status
         Note : Compose process takes upto 10mins to create the Image.
         To check Logs
-        composer-cli compose log <build_id>
+            # composer-cli compose log <build_id>
         
