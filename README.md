@@ -100,4 +100,6 @@ Procedure:
         After running the command Compose added in the queue you can check the status by running below command.
             # composer-cli compose status
         Note : Compose process takes upto 10mins to create the Image.
+        To check Logs
+        composer-cli compose log <build_id>
         

@@ -9,7 +9,7 @@ systemctl enable --now cockpit.socket
 
 echo "Creating a directory where you want to store your repository overrides"
 
-sudo mkdir -p /tmp/etc/osbuild-composer/repositories
+mkdir -p /tmp/etc/osbuild-composer/repositories
 
 echo "Coping the repo"
 
@@ -18,4 +18,4 @@ cp /usr/share/osbuild-composer/repositories/rhel-87.json /tmp/etc/osbuild-compos
 
 echo "restart service"
 
-#sudo systemctl restart osbuild-composer.service
+sudo systemctl restart osbuild-composer.service
