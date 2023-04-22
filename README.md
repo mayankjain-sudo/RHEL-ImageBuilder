@@ -29,11 +29,8 @@ Procedure:
     Create a directory where you want to store your repository overrides:
 
     # sudo mkdir -p /etc/osbuild-composer/repositories
-    
     Copy the file for your distribution from /usr/share/osbuild-composer/ and modify its content.For RHEL 8.7, use /etc/osbuild-composer/repositories/rhel-87.json
-
     Now restart the osbuild-composer.service
-
     # sudo systemctl restart osbuild-composer.service
 
 Setup to create Image using Image Builder is completed. Now we will create Image using command line 
@@ -52,23 +49,18 @@ Create file with extension .toml. In this repo case we created FIRSTIMAGE-BULEPR
 
 Now Push (import) the blueprint:
     # composer-cli blueprints push BLUEPRINT-NAME.toml
-
 Verify that the blueprint has been pushed and exists:
     # composer-cli blueprints list
     you will able to see your Buleprint.
-
 Display the blueprint configuration you have just added:
     # composer-cli blueprints show FIRSTIMAGE
-
 Check whether the components and versions listed in the blueprint and their dependencies are valid:
     # composer-cli blueprints depsolve FIRSTIMAGE
     If image builder is unable to depsolve a package from your custom repositories, follow the steps:
     Remove the osbuild-composer cache:
         # sudo rm -rf /var/cache/osbuild-composer/*
         # sudo systemctl restart osbuild-composer
-
 # Creating a system image with image builder in the command-line interface
-
 Procedure:
     Start the compose:
         # composer-cli compose start BLUEPRINT-NAME IMAGE-TYPE
