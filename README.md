@@ -47,14 +47,14 @@ The workflow for the command-line interface can be summarized as follows:
 
 Create file with extension .toml. In this repo case we created FIRSTIMAGE-BULEPRINT.toml
 
-Now Push (import) the blueprint:
+    Now Push (import) the blueprint:
     # composer-cli blueprints push BLUEPRINT-NAME.toml
-Verify that the blueprint has been pushed and exists:
+    Verify that the blueprint has been pushed and exists:
     # composer-cli blueprints list
     you will able to see your Buleprint.
-Display the blueprint configuration you have just added:
+    Display the blueprint configuration you have just added:
     # composer-cli blueprints show FIRSTIMAGE
-Check whether the components and versions listed in the blueprint and their dependencies are valid:
+    Check whether the components and versions listed in the blueprint and their dependencies are valid:
     # composer-cli blueprints depsolve FIRSTIMAGE
     If image builder is unable to depsolve a package from your custom repositories, follow the steps:
     Remove the osbuild-composer cache:
