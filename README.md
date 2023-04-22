@@ -113,4 +113,7 @@ After running the command Compose added in the queue you can check the status by
 To check Logs
 
             # composer-cli compose log <build_id>
+To download the created image
+
+            # composer-cli compose image COMPOSE-UUID
         
